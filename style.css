@@ -1,0 +1,45 @@
+body{
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+#Opacity{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+#Game{
+    margin-top: 3vh;
+    z-index: 1;
+}
+
+.Score{
+    color:white; 
+    z-index:1; 
+    position:absolute;
+    display: flex;
+    width : 300px;
+    font-size: 20pt;
+    flex-wrap: 	wrap;
+    padding-left: 30px
+}
+
+.Score #ScoreLabel, .Score #Score{
+    width: 150px;
+}
+
+.Score #GameOver, .Score #Restart{
+    width: 300px;
+}

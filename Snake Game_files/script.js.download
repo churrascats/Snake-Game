@@ -1,0 +1,29 @@
+let Canvas = $("#Game").get(0)
+Canvas.width = 600
+Canvas.height = 600
+
+let Context = Canvas.getContext("2d")
+
+with (Context) {
+    fillStyle = "#DCDCDC"
+    lineWidth = 0.4;
+    strokeStyle = "#194471"
+    fillRect(0, 0, Canvas.width, Canvas.height)
+    strokeRect(0, 0, Canvas.width, Canvas.height)
+}
+
+let SquareBackgroundSize = { "x": 20, "y": 20 }
+
+for (let i = 0; i < Canvas.width / SquareBackgroundSize["x"]; i++) {
+    for (let j = 0; j < Canvas.height / SquareBackgroundSize["y"]; j++) {
+        Context.strokeRect(i * SquareBackgroundSize["x"], j * SquareBackgroundSize["y"], SquareBackgroundSize["x"], SquareBackgroundSize["y"])
+    }
+}
+
+$(document).keydown(() => MoveSnake())
+
+//---------------------------------------------------------
+
+function MoveSnake() {
+    alert(event.key)
+}

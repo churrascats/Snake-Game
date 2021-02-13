@@ -1,0 +1,28 @@
+body{
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+#Opacity{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+#Game{
+    margin-top: 10vh;
+    z-index: 1;
+}
+
+
